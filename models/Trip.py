@@ -11,6 +11,7 @@ class Trip(Document):
     start_time: str
     end_time: str
     direction: int = Field(gt=0, lt=3)
+    distance: int = Field(gt=0)
     schedule_id: Optional[str] = None
     vehicle_block_id: Optional[str] = None
 
