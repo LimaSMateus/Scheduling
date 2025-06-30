@@ -14,6 +14,6 @@ app = FastAPI(lifespan=lifespan)
 
 @app.get("/")
 async def hello():
-    test = Trip(trip_id="test", start_stop="test", end_stop="test", start_time="test", end_time="test")
+    test = Trip(trip_id="test", start_stop="test", end_stop="test", start_time="test", end_time="test", direction=1)
     await test.save()
     return {"hello": "world"}
