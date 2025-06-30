@@ -1,0 +1,6 @@
+fastapi
+uvicorn[standard]
+pulp
+beanie
+motor
+pydantic-settings
