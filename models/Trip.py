@@ -1,4 +1,3 @@
-from typing import Optional
 from beanie import Document
 from pydantic import Field
 
@@ -11,9 +10,7 @@ class Trip(Document):
     start_time: str
     end_time: str
     direction: int = Field(gt=0, lt=3)
-    distance: int = Field(gt=0)
-    schedule_id: Optional[str] = None
-    vehicle_block_id: Optional[str] = None
+    distance: float = Field(gt=0)
 
     class Settings:
         name = "trip_collection"
