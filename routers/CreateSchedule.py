@@ -20,6 +20,7 @@ async def create_schedule(trip_set: str, new_schedule_name: str):
             trip_set=trip_set,
             schedule_name=new_schedule_name,
             trip_id=trip.trip_id,
+            route=trip.route,
             event_type="service_trip",
             start_stop=trip.start_stop,
             end_stop=trip.end_stop,

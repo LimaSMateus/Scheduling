@@ -7,6 +7,7 @@ class Schedule(Document):
     schedule_name: str
     vehicle_id: Optional[str] = None
     trip_id: Optional[str] = None
+    route: str
     event_type: str
     start_stop: str
     end_stop: str

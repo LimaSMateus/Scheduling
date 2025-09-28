@@ -5,6 +5,7 @@ from pydantic import Field
 class Trip(Document):
     trip_set: str
     trip_id: str
+    route: str
     start_stop: str
     end_stop: str
     start_time: str
